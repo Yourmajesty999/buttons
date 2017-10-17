@@ -3,10 +3,63 @@
 <head>
 	<title>Buttons</title>
 	<meta charset="utf-8">
-	<style type="text/css" src="style.css"></style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<!-- first one -->
-	<div>11 Themes</div>
+	<h3>第一组：</h3>
+	<div class="first_one" id="value" onClick="toggledisplay()">11 Themes</div>
+	<ul class="sub" id="show">
+		<li data_value="Cat theme">Cat</li>
+		<li data_value="Dog theme">Dog</li>
+		<li data_value="Spider theme">Spider</li>
+		<li data_value="Bear theme">Bear</li>
+		<li data_value="Bea theme">Bea</li>
+		<li data_value="Elephant theme">Elephant</li>
+		<li data_value="Bird theme">Bird</li>
+		<li data_value="Fish theme">Fish</li>
+		<li data_value="Butterfly theme">Butterfly</li>
+		<li data_value="Pig theme">Pig</li>
+		<li data_value="Monkey theme">Monkey</li>
+	</ul>
+	<!-- loading -->
+	<div class="loading"></div>
+	<!-- choice -->
+	<div class="choice">Cat theme</div>
+	<div class="choice">Dog theme</div>
+	<div class="choice">Spider theme</div>
+	<div class="choice">Bear theme</div>
+	<div class="choice">Bea theme</div>
+	<div class="choice">Elephant theme</div>
+	<div class="choice">Bird theme</div>
+	<div class="choice">Fish theme</div>
+	<div class="choice">Butterfly theme</div>
+	<div class="choice">Pig theme</div>
+	<div class="choice">Monkey theme</div>
+	
+
+	<script type="text/javascript">
+		var value = document.getElementById("value");
+		var show = document.getElementById("show");
+	//toggle sub menu
+		function toggledisplay() {
+		if (show.style.display === "none") {
+			show.style.display = "block";
+		} else {
+			show.style.display = "none";
+		};
+		//change button's color
+		value.style.backgroundColor = "rgba(242,242,242,1)";
+	}
+
+	//get option value
+
+
+
+
+
+
+
+	</script>
 </body>
 </html>
