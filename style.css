@@ -56,10 +56,33 @@ div.loading:after{
 
 
 
+/* second group */
+div.follow,
+div.following{
+	width: 100px;
+	padding: 6px 0;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+}
 
+div.follow{
+	color: rgba(0,0,0,.6);
+	background-color: rgb(224, 225, 226);
+	display: block;
+}
 
+div.following{
+	background-color: #cacbcd;
+	color: rgba(0,0,0,.8);
+	display: none;
+}
 
-
+div.follow:hover{
+	background-color: #cacbcd;
+	color: rgba(0,0,0,.8);
+	box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+}
 
 
 

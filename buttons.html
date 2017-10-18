@@ -36,7 +36,18 @@
 	<div class="choice">Butterfly theme</div>
 	<div class="choice">Pig theme</div>
 	<div class="choice">Monkey theme</div>
-	
+
+<!-- seconde group -->
+	<h3>第二组：</h3>
+	<div class="follow" id="follow" onClick="showFollow()">Follow</div>
+	<div class="following" id="following">Following</div>
+
+
+
+
+
+
+
 
 	<script type="text/javascript">
 		var value = document.getElementById("value");
@@ -54,7 +65,13 @@
 
 	//get option value
 
-
+	//second group
+	var follow = document.getElementById("follow");
+	var following = document.getElementById("following");
+	function showFollow() {//need to toggle them
+		follow.style.display = follow.style.display == 'none' ? 'block' : 'none';
+		following.style.display = following.style.display == 'none' ? 'block' : 'none';
+	}
 
 
 
