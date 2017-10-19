@@ -63,6 +63,7 @@ div.following{
 	padding: 6px 0;
 	text-align: center;
 	border-radius: 3px;
+	cursor: pointer;
 	box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
 }
 
@@ -85,23 +86,269 @@ div.follow:hover{
 }
 
 
+/* third group */
+ul.third_group{
+	padding: 0;
+	width: 180px;
+	border-radius: 3px;
+	background-color: rgb(224, 225, 226);
+}
+
+ul.third_group li{
+	width: 31.2%;
+	padding: 6px 0;
+	text-align: center;
+	display: inline-block;
+	list-style: none;
+	cursor: pointer;
+}
+
+ul.third_group li:hover{
+	background-color: #cacbcd;
+}
 
 
+/* forth group */
+ul.colorful {
+	background-color: #1b1c1d;
+	padding: 10px;
+}
+
+ul.colorful li{
+	list-style: none;
+	display: inline-block;
+	border: solid 2px;
+	border-radius: 5px;
+	padding: 6px 12px;
+	margin: 5px;
+	font-weight: 700;
+}
 
 
+li.Standard{
+	color: #fff; 
+	border-color: #fff;
+}
+li.Standard:hover{
+	color: rgba(0,0,0,.8);
+	background-color: #fff;
+	border-color: #fff;
+}
 
 
+li.Red{
+	color: #ff695e;  
+	border-color: #ff695e;
+}
+
+li.Red:hover{
+	color: #fff;  
+	background-color: #ff695e;
+	border-color: #ff695e;
+}
 
 
+li.Orange{
+	color: #ff851b;
+	border-color: #ff851b;
+}
+li.Orange:hover{
+	color: #fff;
+	background-color: #ff851b;
+}
 
 
+li.Yellow{
+	color: #ffe21f;
+	border-color: #ffe21f;
+}
+li.Yellow:hover{
+	color: rgba(0,0,0,.8);
+	background-color: #ffe21f;
+	border-color: #ffe21f;
+}
 
 
+li.Olive{
+	color: #d9e778;
+	border-color: #d9e778;
+}
+li.Olive:hover{
+	color: rgba(0,0,0,.8);
+	background-color: #d9e778;
+	border-color: #d9e778;
+}
 
 
+li.Green{
+	color: #2ecc40;
+	border-color: #2ecc40;
+}
+li.Green:hover{
+	color: #fff;
+	background-color:  #2ecc40;
+}
 
 
+li.Teal{
+	color: #6dffff;
+	border-color: #6dffff;
+}
+li.Teal:hover{
+	color: rgba(0,0,0,.8);
+	background-color:  #6dffff;
+	border-color: #fff;
+}
 
+
+li.Blue{
+	color: #54c8ff;
+	border-color: #54c8ff;
+}
+li.Blue:hover{
+	color: #fff;
+	background-color: #54c8ff;
+}
+
+
+li.Violet{
+	color: #a291fb;
+	border-color: #a291fb;
+}
+li.Violet:hover{
+	color: #fff;
+	background-color: #a291fb;
+}
+
+
+li.Purple{
+	color: #d65aff;
+	border-color: #d65aff;
+}
+li.Purple:hover{
+	color: #fff;
+	background-color: #d65aff;
+}
+
+
+li.Pink{
+	color: #ff8edf;
+	border-color: #ff8edf;
+}
+li.Pink:hover{
+	color: #fff;
+	background-color: #ff8edf;
+}
+
+
+li.Brown{
+	color: #d67c1c;
+	border-color: #d67c1c;
+}
+li.Brown:hover{
+	color: #fff;
+	background-color: #d67c1c;
+}
+
+
+li.Grey{
+	color: #fff;
+	border-color: grey;
+}
+li.Grey:hover{
+	color: rgba(0,0,0,.8);
+	background-color: grey;
+	border-color: grey;
+}
+
+
+li.Black{
+	color: #fff;
+	border-color: #fff;
+}
+li.Black:hover{
+	border-color: #1b1c1d;
+	background-color: #000;
+}
+
+
+/* fifth group */
+ul.colorful-second li{
+	display: inline-block;
+	list-style: none;
+	margin: 6px 5px;
+	padding: 6px 12px;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+li.red{
+	color: #db2828;
+}
+
+li.orange{
+	color: #f2711c;
+}
+
+li.yellow{
+	color: #fbbd08;
+}
+li.yellow:hover{
+	color: #eaae00;
+}
+
+li.olive{
+	color: #b5cc18;
+}
+li.olive:hover{
+	color: #a7bd0d;
+}
+
+li.green{
+	color: #21ba45;
+}
+li.green:hover{
+	color:#16ab39;
+}
+
+li.teal{
+	color: #00b5ad;
+}
+li.teal:hover{
+	color: #009c95;
+}
+
+li.blue{
+	color: #2185d0;
+}
+
+li.violet{
+	color: #6435c9;
+}
+
+li.purple{
+	color: #a333c8;
+}
+
+li.pink{
+	color: #e03997;
+}
+
+li.lavender{
+	color: #9393d4;
+}
+
+li.brown{
+	color: #a5673f;
+}
+
+li.grey{
+	color: #767676;
+}
+
+li.black{
+	color: #1b1c1d;
+}
 
 
 

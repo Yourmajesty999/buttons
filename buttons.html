@@ -40,10 +40,53 @@
 <!-- seconde group -->
 	<h3>第二组：</h3>
 	<div class="follow" id="follow" onClick="showFollow()">Follow</div>
-	<div class="following" id="following">Following</div>
+	<div class="following" id="following" onClick="showFollow()">Following</div>
 
+<!-- third group -->
+<h3>第三组：</h3>
+	<ul class="third_group">
+		<li>Cat</li>
+		<li>Dog</li>
+		<li>Bea</li>
+	</ul>
 
+<!-- forth group -->
+<h3>第四组：</h3>
+<ul class="colorful">
+	<li class="Standard">Standard</li>
+	<li class="Red">Red</li>
+	<li class="Orange">Orange</li>
+	<li class="Yellow">Yellow</li>
+	<li class="Olive">Olive</li>
+	<li class="Green">Green</li>
+	<li class="Teal">Teal</li>
+	<li class="Blue">Blue</li>
+	<li class="Violet">Violet</li>
+	<li class="Purple">Purple</li>
+	<li class="Pink">Pink</li>
+	<li class="Brown">Brown</li>
+	<li class="Grey">Grey</li>
+	<li class="Black">Black</li>
+</ul>
 
+<!-- fifth group -->
+<h3>第五组：</h3>
+<ul class="colorful-second">
+	<li class="red">Red</li>
+	<li class="orange">Orange</li>
+	<li class="yellow">Yellow</li>
+	<li class="olive">Olive</li>
+	<li class="green">Green</li>
+	<li class="teal">Teal</li>
+	<li class="blue">Blue</li>
+	<li class="lavender">Lavender</li>
+	<li class="violet">Violet</li>
+	<li class="purple">Purple</li>
+	<li class="pink">Pink</li>
+	<li class="brown">Brown</li>
+	<li class="grey">Grey</li>
+	<li class="black">Black</li>
+</ul>
 
 
 
@@ -65,14 +108,17 @@
 
 	//get option value
 
+
 	//second group
 	var follow = document.getElementById("follow");
 	var following = document.getElementById("following");
 	function showFollow() {//need to toggle them
 		follow.style.display = follow.style.display == 'none' ? 'block' : 'none';
-		following.style.display = following.style.display == 'none' ? 'block' : 'none';
+		
 	}
 
+
+	//third group
 
 
 
