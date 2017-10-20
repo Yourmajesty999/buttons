@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shuffle</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="shuffle.css">
+</head>
+<body>
+	<div id="app" class="app">
+		<div class="button" @click="shuffle(items)">Shuffle</div>
+		<transition-group tag="ul" name="flip-list">
+			<li v-for="item in items" :key="item.text" :style="item.style" class="flip-list-item" @click="hide">
+				{{ item.text }}
+			</li>
+		</transition-group >
+	</div>
+
+<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+<script type="text/javascript">
+	new Vue({
+		el: '#app',
+		data: {
+			items:[
+				{
+					text: 'red',
+					style: {
+						color: '#db2828',
+					}
+				},
+				{
+					text: 'orange',
+					style: {
+						color: '#f2711c' 
+					}
+				},
+				{
+					text: 'yellow',
+					style: {
+						color: '#fbbd08' 
+					}
+				},
+				{
+					text: 'olive',
+					style: {
+						color: '#b5cc18' 
+					}
+				},
+				{
+					text: 'chartreuse',
+					style: {
+						color: 'chartreuse' 
+					}
+				},
+				{
+					text: 'green',
+					style: {
+						color: '#21ba45' 
+					}
+				},
+				{
+					text: 'teal',
+					style: {
+						color: '#00b5ad' 
+					}
+				},
+				{
+					text: 'blue',
+					style: {
+						color: '#2185d0' 
+					}
+				},
+				{
+					text: 'skyblue',
+					style: {
+						color: 'skyblue' 
+					}
+				},
+				{
+					text: 'aquamarine',
+					style: {
+						color: 'aquamarine' 
+					}
+				},
+				{
+					text: 'aqua',
+					style: {
+						color: 'aqua' 
+					}
+				},
+				{
+					text: 'lavender',
+					style: {
+						color: '#9393d4' 
+					}
+				},
+				{
+					text: 'blueviolet',
+					style: {
+						color: 'blueviolet' 
+					}
+				},
+				{
+					text: 'violet',
+					style: {
+						color: '#6435c9' 
+					}
+				},
+				{
+					text: 'purple',
+					style: {
+						color: '#a333c8' 
+					}
+				},
+				{
+					text: 'pink',
+					style: {
+						color: '#e03997' 
+					}
+				},
+				{
+					text: 'brown',
+					style: {
+						color: '#a5673f' 
+					}
+				},
+				{
+					text: 'grey',
+					style: {
+						color: '#767676' 
+					}
+				},
+				{
+					text: 'black',
+					style: {
+						color: '#1b1c1d' 
+					}
+				}
+			]
+		},
+		methods: {
+    		shuffle: function (a) {
+    			var j, x, i;
+    			for (i = a.length - 1; i > 0; i--) {
+    				j = Math.floor(Math.random() * (i + 1));
+    				x = a[i];
+    				a[i] = a[j];
+    				a[j] = x;
+    			}
+    			this.items = a,
+    			this.items.push(this.items.pop())
+    		},
+    		randomIndex: function () {
+      			return Math.floor(Math.random() * this.items.length)
+    		},
+    		hide: function() {
+    			this.items.splice(this.randomIndex(), 1)
+    		}
+  		}
+	})
+</script>
+</body>
+</html>
