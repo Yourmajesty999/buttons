@@ -9,7 +9,7 @@
 	<div id="app" class="app">
 		<div class="button" @click="shuffle(items)">Shuffle</div>
 		<transition-group tag="ul" name="flip-list">
-			<li v-for="item in items" :key="item.text" :style="item.style" class="flip-list-item" @click="hide">
+			<li v-for="item in items" :key="item.id" :style="item.style" class="flip-list-item" @click="hide(item.id)">
 				{{ item.text }}
 			</li>
 		</transition-group >
@@ -22,115 +22,134 @@
 		data: {
 			items:[
 				{
-					text: 'red',
+					id: 1,
+					text: '我',
 					style: {
 						color: '#db2828',
 					}
 				},
-				{
-					text: 'orange',
+				{	
+					id: 2,
+					text: '特别',
 					style: {
 						color: '#f2711c' 
 					}
 				},
 				{
-					text: 'yellow',
+					id: 3,
+					text: '喜欢',
 					style: {
 						color: '#fbbd08' 
 					}
 				},
 				{
-					text: 'olive',
+					id: 4,
+					text: '你',
 					style: {
 						color: '#b5cc18' 
 					}
 				},
 				{
-					text: 'chartreuse',
+					id: 15,
+					text: '哦',
 					style: {
 						color: 'chartreuse' 
 					}
 				},
 				{
-					text: 'green',
+					id: 16,
+					text: '是',
 					style: {
 						color: '#21ba45' 
 					}
 				},
 				{
-					text: 'teal',
+					id: 17,
+					text: '真的',
 					style: {
 						color: '#00b5ad' 
 					}
 				},
 				{
-					text: 'blue',
+					id: 18,
+					text: '喜欢',
 					style: {
 						color: '#2185d0' 
 					}
 				},
 				{
-					text: 'skyblue',
+					id: 19,
+					text: '你',
 					style: {
 						color: 'skyblue' 
 					}
 				},
 				{
-					text: 'aquamarine',
+					id: 10,
+					text: '哦',
 					style: {
 						color: 'aquamarine' 
 					}
 				},
 				{
-					text: 'aqua',
+					id: 11,
+					text: '想',
 					style: {
 						color: 'aqua' 
 					}
 				},
 				{
-					text: 'lavender',
+					id: 21,
+					text: '要',
 					style: {
 						color: '#9393d4' 
 					}
 				},
 				{
-					text: 'blueviolet',
+					id: 31,
+					text: '永远',
 					style: {
 						color: 'blueviolet' 
 					}
 				},
 				{
-					text: 'violet',
+					id: 41,
+					text: '跟你',
 					style: {
 						color: '#6435c9' 
 					}
 				},
 				{
-					text: 'purple',
+					id: 51,
+					text: '在一起',
 					style: {
 						color: '#a333c8' 
 					}
 				},
 				{
-					text: 'pink',
+					id: 61,
+					text: '哦',
 					style: {
 						color: '#e03997' 
 					}
 				},
 				{
-					text: 'brown',
+					id: 71,
+					text: '喵',
 					style: {
 						color: '#a5673f' 
 					}
 				},
 				{
-					text: 'grey',
+					id: 81,
+					text: '喵',
 					style: {
 						color: '#767676' 
 					}
 				},
 				{
-					text: 'black',
+					id: 91,
+					text: '啊',
 					style: {
 						color: '#1b1c1d' 
 					}
@@ -149,11 +168,16 @@
     			this.items = a,
     			this.items.push(this.items.pop())
     		},
-    		randomIndex: function () {
-      			return Math.floor(Math.random() * this.items.length)
-    		},
-    		hide: function() {
-    			this.items.splice(this.randomIndex(), 1)
+    		//delete the item which was selected
+    		hide: function(target) {
+    			let index = null
+    			for(var i = 0; i < this.items.length; i ++) {
+    				if(this.items[i].id == target){
+    					index = i
+    					break
+    				}
+    			}
+    			this.items.splice(index, 1)
     		}
   		}
 	})
