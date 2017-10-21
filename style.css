@@ -280,6 +280,7 @@ ul.colorful-second li{
 	padding: 6px 12px;
 	border: 1px solid;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 li.red{
@@ -351,6 +352,132 @@ li.black{
 }
 
 
+/* sixth group */
+ul.colorful-sixth li{
+	display: inline-block;
+	list-style: none;
+	margin: 6px 5px;
+	padding: 6px 12px;
+	border: 1px solid;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+
+ul.colorful-sixth li.red{
+	background-color: #db2828;
+}
+ul.colorful-sixth li.red:hover{
+	background-color: #d01919;
+}
+
+ul.colorful-sixth li.orange{
+	background-color: #f2711c;
+}
+ul.colorful-sixth li.orange:hover{
+	background-color: #f26202;
+}
+
+
+ul.colorful-sixth li.yellow{
+	background-color: #fbbd08;
+}
+ul.colorful-sixth li.yellow:hover{
+	background-color: #eaae00;
+	color: white;
+}
+
+
+ul.colorful-sixth li.olive{
+	background-color: #b5cc18;
+}
+ul.colorful-sixth li.olive:hover{
+	background-color: #a7bd0d;
+	color: white;
+}
+
+
+
+ul.colorful-sixth li.green{
+	background-color: #21ba45;
+}
+ul.colorful-sixth li.green:hover{
+	background-color: #16ab39;
+	color: white;
+}
+
+
+ul.colorful-sixth li.teal{
+	background-color: #00b5ad;
+}
+ul.colorful-sixth li.teal:hover{
+	background-color: #009c95;
+	color: white;
+}
+
+
+ul.colorful-sixth li.blue{
+	background-color: #2185d0;
+}
+ul.colorful-sixth li.blue:hover{
+	background-color: #1678c2;
+}
+
+
+ul.colorful-sixth li.violet{
+	background-color: #6435c9;
+}
+ul.colorful-sixth li.violet:hover{
+	background-color: #5829bb;
+}
+
+
+ul.colorful-sixth li.purple{
+	background-color: #a333c8;
+}
+ul.colorful-sixth li.purple:hover{
+	background-color: #9627ba;
+}
+
+
+ul.colorful-sixth li.pink{
+	background-color: #e03997;
+}
+ul.colorful-sixth li.pink:hover{
+	background-color: #e61a8d;
+}
+
+
+ul.colorful-sixth li.lavender{
+	background-color: #9393d4;
+}
+ul.colorful-sixth li.lavender:hover{
+	background-color: #805ec5;
+}
+
+
+ul.colorful-sixth li.brown{
+	background-color: #a5673f;
+}
+ul.colorful-sixth li.brown:hover{
+	background-color: #975b33;
+}
+
+
+ul.colorful-sixth li.grey{
+	background-color: #767676;
+}
+ul.colorful-sixth li.grey:hover{
+	background-color: #838383;
+}
+
+
+ul.colorful-sixth li.black{
+	background-color: #1b1c1d;
+}
+ul.colorful-sixth li.black:hover{
+	background-color: #27292a;
+}
 
 
 
